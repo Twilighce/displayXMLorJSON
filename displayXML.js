@@ -17,6 +17,7 @@
              }).bind(this));                   
     },
 
+    // 判断需要以何种格式显示该字符串
     xmlOrJson: function(str) {
         if (str.substring(0,1)=='<' || str.substring(1,2)=='<') {
             this.viewXml(str);
@@ -25,6 +26,7 @@
         }
     },
 
+    // 以 XML 格式展示
     viewXml: function(xmlString) {
         var _this = this;
 
@@ -36,6 +38,7 @@
         newWindow.focus();           
     },
 
+    // 以 Json 格式展示
     viewJson: function(jsonString) {
 
         var _this = this;
@@ -51,6 +54,7 @@
         newWindow.focus();
     },
 
+    // 转义
     escapeHTML: function(str) {
 
         str = str
@@ -64,6 +68,7 @@
         return str;
     },        
 
+    // 将无格式的xmlString 转化为 XML 格式
     formatXML: function(xmlString,indent) {
         var indent = indent || "\t"; //can be specified by second argument of the function
 
