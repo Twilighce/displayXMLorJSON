@@ -6,7 +6,7 @@
 
 用户在前端 click 'view XML' button 时，后端使用 getCharacterStream() 方法读取大字段 Clob，并将其转化为 String 类型传至前端；
 
-(关于后端如何从 DB 读取 Clob 的请看这里： [enter link description here](https://gist.github.com/Twilighce/8e2ad27ea12e590db07987ab521002d6)
+(关于后端如何从 DB 读取 Clob 的请看这里： [Twilighce's gist：get Clob data from DB and cast Clob to String](https://gist.github.com/Twilighce/8e2ad27ea12e590db07987ab521002d6)
 
 ## 需求
 
